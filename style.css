@@ -1,0 +1,195 @@
+body {
+    background: linear-gradient(135deg, #f3696e, #f8a902);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 700px;
+    height: 450px;
+    background-color: white;
+    border-radius: 35px;
+    display: flex;
+  }
+  
+  .left-box {
+    flex: 0.5;
+    margin: 20px 60px;
+  }
+  
+  .right-box {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px #ccc;
+  }
+  .right-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    margin: 10px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .service-container {
+    margin-top: 30px;
+  }
+  
+  .ai-service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .ai-service-item .ai-service-item-input {
+    appearance: none !important;
+    width: 14px;
+    height: 14px;
+    outline: 3px solid #f8a902;
+    outline-offset: 2px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .ai-service-item .ai-service-item-input:checked {
+    background-color: #f8a902;
+  }
+  
+  .mydrop-zone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border: 3px dotted #aaa;
+    background-color: #cccccc;
+    border-radius: 20px;
+  }
+  
+  .mydrop-zone input {
+    display: none;
+  }
+  
+  .magic-btn {
+    width: 100%;
+    height: 41px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Loader */
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0,0, 0.45);
+    display: none;
+  }
+  
+  .loader {
+    width: 8px;
+    height: 8px;
+    position: relative;
+    border-radius: 50%;
+    background: #fff;
+    animation: wave 1s ease-in infinite;
+  }
+  
+  @keyframes wave {
+   0% {  box-shadow:
+    0 0 0 0px rgba(255, 255,255, 1),
+    0 0 0 20px rgba(255, 255,255, 0.2),
+    0 0 0 40px rgba(255, 255,255, 0.6),
+    0 0 0 60px rgba(255, 255,255, 0.4),
+    0 0 0 80px rgba(255, 255,255, 0.2)
+    }
+    100% {  box-shadow:
+      0 0 0 80px rgba(255, 255,255, 0),
+      0 0 0 60px rgba(255, 255,255, 0.2),
+      0 0 0 40px rgba(255, 255,255, 0.4),
+      0 0 0 20px rgba(255, 255,255, 0.6),
+      0 0 0 0px rgba(255, 255,255, 1)
+    }
+  }
+  
+  
+    
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 10px #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
