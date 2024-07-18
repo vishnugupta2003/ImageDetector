@@ -1,1 +1,0 @@
-authored by Vishnu Gupta
